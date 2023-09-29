@@ -1,0 +1,65 @@
+.gameHeading {
+  font-family: 'Bree Serif';
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .gameHeading {
+    font-size: 24px;
+  }
+}
+.scoreTitle {
+  font-size: 18px;
+  line-height: 16px;
+  color: #223a5f;
+  font-weight: bold;
+  font-family: 'Bree Serif';
+}
+@media (min-width: 768px) {
+  .scoreTitle {
+    font-size: 24px;
+  }
+}
+.totalScore {
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 14px;
+  color: #223a5f;
+}
+@media (min-width: 768px) {
+  .totalScore {
+    font-size: 32px;
+  }
+}
+.rpsImage {
+  width: 100%;
+}
+/*popupContainer*/
+.popupContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 80%;
+  padding: 15px;
+}
+.rulesImage {
+  width: 100%;
+}
+.trigger-button {
+  align-self: flex-end;
+  background-color: #ffffff;
+  color: #223a5f;
+  font-family: 'Bree Serif';
+  border-radius: 5px;
+  border: 0;
+  width: 80px;
+  height: 32px;
+  font-size: 16px;
+}
+.playContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
