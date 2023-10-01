@@ -2,12 +2,17 @@ import './index.css'
 
 const GameResultsView = props => {
   const {choicesList, gameResults, onClickPlayAgain, resultText} = props
-  const yourChoice = choicesList.find(
+
+  const userChoiceObject = choicesList.find(
     item => item.id === gameResults.userChoice,
-  ).imageUrl
-  const opponentChoice = choicesList.find(
+  )
+  const opponentChoiceObject = choicesList.find(
     item => item.id === gameResults.opponentChoice,
-  ).imageUrl
+  )
+  console.log(userChoiceObject)
+  console.log(opponentChoiceObject)
+  const yourChoice = userChoiceObject.imageUrl
+  const opponentChoice = opponentChoiceObject.imageUrl
   return (
     <div className="gameResultsContainer">
       <div className="playerResultContainer">
@@ -32,7 +37,7 @@ const GameResultsView = props => {
       <div>
         <p className="finalResult">{resultText}</p>
         <button type="button" className="playBtn" onClick={onClickPlayAgain}>
-          PLAY BUTTON
+          PLAY AGAIN
         </button>
       </div>
     </div>
